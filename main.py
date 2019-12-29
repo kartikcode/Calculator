@@ -1,3 +1,4 @@
+import kivy
 from kivy.app import App
 from kivy.boxlayout import Boxlayout
 from kivy.gridlayout import GridLayout
@@ -5,7 +6,8 @@ from kivy.uix.label import Label
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 
-class Calculator(self):
+class Calculator(GridLayout):
+  def 
   
 
 
