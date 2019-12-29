@@ -1,1 +1,57 @@
-
+<CB@Button>:
+font_size: 32
+on_press: equation.text= equation.text + self.text
+<CalcLayout>:
+    id:calculator
+    d_equation: equation
+    font_size: 32
+    rows: 6
+    spacing:10
+    padding: 10
+    BoxLayout:
+        TextInput: 
+            id: equation
+            font_size=40
+            multiline= False
+    BoxLayout:
+        CB:
+            text: "7"
+        CB:
+            text: "8"
+        CB:
+            text: "9"
+        CB:
+            text: "+"  
+     BoxLayout:
+        CB:
+            text: "4"
+        CB:
+            text: "5"
+        CB:
+            text: "6"
+        CB:
+            text: "-"     
+     BoxLayout:
+        CB:
+            text: "1"
+        CB:
+            text: "2"
+        CB:
+            text: "3"
+        CB:
+            text: "/"   
+     BoxLayout:
+        Button:
+            text: "AC"
+            on_press: equation.text=""
+        CB:
+            text: "0"
+        Button:
+            text: "="
+            on_press: caculator.calculate(equation.text)
+        CB:
+            text: "X"  
+     BoxLayout:
+        Label:
+            text:"['b']Calculator@kartikcode['b']"
+            font_size: 36
