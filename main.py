@@ -5,6 +5,10 @@ from kivy.gridlayout import GridLayout
 from kivy.uix.label import Label
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
+from kivy.config import Config
+
+Config.set('graphics','resizable',1)
+kivy.require('1.9.0')
 
 class CalcLayot(GridLayout):
   def calculate(self,calculation):
