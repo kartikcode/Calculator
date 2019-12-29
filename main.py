@@ -6,19 +6,19 @@ from kivy.uix.label import Label
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 
-class Calculator(GridLayout):
-  def 
+class CalcLayot(GridLayout):
+  def calculate(self,calculation):
+    if calculation:
+      try:
+        self.d_equation.text=str(eval(calculation))
+      except Error:
+        self.d_equation.text="ERROR"
   
-
-
-
-
-
 
 
 class CalculatorApp(self):
   def build(self):
-    pass
+    return CalcLayout()
 
 if __name__="__main":
   CalculatorApp().run()
