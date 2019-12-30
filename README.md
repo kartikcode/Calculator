@@ -18,9 +18,7 @@ sudo apt install virtualenv python3-virtualenv
 virtualenv -p python3 env
 ```
 <br>
-```
-source ./env/bin/activate
-```
+
 <br>
 The new Python virtual environment for python3 will be created in the env directory which is located in the current directory.
 
