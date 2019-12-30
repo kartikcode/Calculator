@@ -1,27 +1,27 @@
-import kivy
-from kivy.app import App
-from kivy.gridlayout import GridLayout
-from kivy.uix.label import Label
-from kivy.uix.widget import Widget
-from kivy.uix.button import Button
-from kivy.config import Config
-
-Config.set('graphics','resizable',1)
+import kivy 
+from kivy.app import App 
 kivy.require('1.9.0')
-
-class CalcLayout(GridLayout):
-  def calculate(self,calculation):
-    if calculation:
-      try:
-        self.d_equation.text=str(eval(calculation))
-      except Error:
-        self.d_equation.text="ERROR"
-  
+from kivy.uix.gridlayout import GridLayout
+from kivy.config import Config
+Config.set('graphics', 'resizable', 1) 
 
 
-class CalculatorApp(self):
-  def build(self):
-    return CalcLayout()
 
-if __name__=="__main__":
-  CalculatorApp().run()
+
+class CalcGridLayout(GridLayout): 
+
+	def calculate(self, calculation): 
+		if calculation: 
+			try: 
+				self.d_equation.text = str(eval(calculation)) 
+			except Exception: 
+				self.d_equation.text = "Error"
+
+class CalculatorApp(App): 
+
+	def build(self): 
+		return CalcGridLayout() 
+
+myApp = CalculatorApp() 
+myApp.run() 
+
