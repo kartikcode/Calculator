@@ -16,10 +16,10 @@ sudo apt install virtualenv python3-virtualenv
 2.Create a Python virtual environment for python3. You can only install python3 packages inside this Python virtual <br>environment. If you also want to install Python 2.x packages, then you need to make another Python virtual environment.<br>
 
 ```virtualenv -p python3 env```
-<br>
+<br><br>
 3. This one to at last activate this virtual environment.<br>
 ```source ./env/bin/activate```
-<br>
+<br><br>
 The new Python virtual environment for python3 will be created in the env directory which is located in the current directory.
 
 
