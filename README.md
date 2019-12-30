@@ -6,7 +6,7 @@ While installing Kivy, make sure its compatible with python3 or else its gonna m
 <br>
 # Running it through a virtual environment<br>
 There is some sort of a bug in Ubuntu 18.0.4 which causes a lot of trouble.<br>
-An easy cure is that you run it in a python3 virtual environment.<br>
+An easy cure is that you run it in a python3 virtual environment.
 Run in the folllowing code on your terminal for doing so:<br>
 1.Install Python 3 virtual environment creator<br>
 ```
@@ -15,7 +15,7 @@ sudo apt install virtualenv python3-virtualenv
 <br>
 2.Create a Python virtual environment for python3. You can only install python3 packages inside this Python virtual <br>environment. If you also want to install Python 2.x packages, then you need to make another Python virtual environment.<br>
 ```
-virtualenv -p python3 env  
+virtualenv -p python3 env  <br>
 source ./env/bin/activate
 ```
 <br>
